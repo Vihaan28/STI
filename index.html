@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+    <head> <title> SHIV TRADING INDIA PVT. LTD. </title> 
+        <link rel="icon" type="image/x-icon" href="NBA logo.jpeg">
+        <!--Stylesheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--javascript-->
+        <script src="main.js" type="text/javascript"></script>
+    </head>
+
+    <body onload="preload()">
+        <center>
+            <div class="header_bar">
+                <h1 class="header"> Shiv Trading India Pvt. Ltd.</h1>
+                <h3>Get all your stock info here! </h3>
+            </div>
+
+            <h2 class="comment_1">Check the stock of products mentioned below : </h2>
+            <br>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Aluminium-Submersible-Wire.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Aluminium Submersible Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock1" class="product_stock"> 0 </h3>
+                    <input id="dataInput1" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Bare-Coppper-Wire.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> Bare-Coppper-Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock2" class="product_stock"> 0 </h3>
+                    <input id="dataInput2" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Black-kraft-paper-ASHFA.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Black Kraft Paper (ASHFA) </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock3" class="product_stock"> 0 </h3>
+                    <input id="dataInput3" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+                
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left"><img src="Copper-Strip.jpg" class="img-responsive" ></div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Copper Strip </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock4" class="product_stock"> 0 </h3>
+                    <input id="dataInput4" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>  
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Cotton-Tape.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Cotton Tape </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock5" class="product_stock"> 0 </h3>
+                    <input id="dataInput5" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="DCC-Coper-Alluminium-Wire.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> DCC Coper Alluminium Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock6" class="product_stock"> 0 </h3>
+                    <input id="dataInput6" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Devidayal.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Devidayal </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock7" class="product_stock"> 0 </h3>
+                    <input id="dataInput7" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="DPC-TPC-Copper-Aluminum-Wire.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> DPC, TPC Copper & Aluminum Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock8" class="product_stock"> 0 </h3>
+                    <input id="dataInput8" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Enamelled-Aluminium-Wire.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Enameled Aluminium Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock9" class="product_stock"> 0 </h3>
+                    <input id="dataInput9" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Enameled-Copper-Winding-WireBIC.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> Enameled Copper Winding Wire(BIC) </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock10" class="product_stock"> 0 </h3>
+                    <input id="dataInput10" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="ESSELL-Copper-Wire-Subermersible.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> ESSELL Copper Wire Submersible </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock11" class="product_stock"> 0 </h3>
+                    <input id="dataInput11" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Glass-Lead-Wire.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> Glass Lead Wire </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock12" class="product_stock"> 0 </h3>
+                    <input id="dataInput12" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="HWP-Copper-Wire-Subermersible-1-768x788.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> HWP Copper Wire Submersible </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock13" class="product_stock"> 0 </h3>
+                    <input id="dataInput13" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="HWP-Enammeled-Copper-768x468.jpg" class="img-responsive" >
+                </div>
+                <div class="right">
+                    <h2 class="product_name"> HWP Enameled Copper </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock14" class="product_stock"> 0 </h3>
+                    <input id="dataInput14" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Insulating-Varnish-DR-BECK.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Insulating Varnish DR BECK </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock15" class="product_stock"> 0 </h3>
+                    <input id="dataInput15" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Insulating-Varnish-JYOTI.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Insulating Varnish JYOTI </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock16" class="product_stock"> 0 </h3>
+                    <input id="dataInput16" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>  
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Milan.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Milan </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock17" class="product_stock"> 0 </h3>
+                    <input id="dataInput17" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Nomex-Paper.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Nomex Paper </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock18" class="product_stock"> 0 </h3>
+                    <input id="dataInput18" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Polyester-Film-GARWARE.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Polyester Film GARWARE </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock19" class="product_stock"> 0 </h3>
+                    <input id="dataInput19" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Polyster-Film-JBF.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Polyester Film JBF </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock20" class="product_stock"> 0 </h3>
+                    <input id="dataInput20" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+            
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Polyester-Film-JINDAL.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Polyester Film JINDAL </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock21" class="product_stock"> 0 </h3>
+                    <input id="dataInput21" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="PVC-Fiber-Glass-Sleeve.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> PVC Fiber Glass Sleeve </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock22" class="product_stock"> 0 </h3>
+                    <input id="dataInput22" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Shramik.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Shramik </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock23" class="product_stock"> 0 </h3>
+                    <input id="dataInput23" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Submersible-Wire-SWASTIK-768x331.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Submersible Wire SWASTIK </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock24" class="product_stock"> 0 </h3>
+                    <input id="dataInput24" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>
+
+            <div class=" col-lg-4 col-md-4 col-sm-4 col-xs-6 productonhome_div">
+                <div class="left">
+                    <img src="Triplex-Sheet.jpg" class="img-responsive" >
+                </div>
+                <br>
+                <div class="right">
+                    <h2 class="product_name"> Triplex Sheet </h2>
+                    <p> Currently Available : </p><br>
+                    <h3 id="datapresenterblock25" class="product_stock"> 0 </h3>
+                    <input id="dataInput25" type="number" class="stock_input" placeholder="Enter new value in numbers">
+                    <button onclick="saveData()" class="savedata_btn">Save Data</button>
+                </div>
+            </div>  
+
+            <div class="footer">
+                Website Created By : Vihaan Mittal<br>
+                For checking and editing product stocks only
+            </div>
+
+        </center>
+    </body>
+</html>
